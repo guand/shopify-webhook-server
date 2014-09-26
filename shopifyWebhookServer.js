@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.post('/requests', shopify.retrieveRequests);
 app.get('/simple', shopify.simpleGetRequests);
 
-app.listen(3000);
+app.listen(8080);
 console.log('Magic happens on port 8080');
 
 
