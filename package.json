@@ -1,0 +1,17 @@
+{
+  "name": "shopifyWebhookHandler",
+  "version": "1.0.0",
+  "description": "Handles webhooks sent from shopify",
+  "main": "shopifyWebhookServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shopify",
+    "webhook",
+    "server",
+    "listener"
+  ],
+  "author": "Jian Guan",
+  "license": "ISC"
+}
