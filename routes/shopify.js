@@ -1,5 +1,5 @@
 exports.retrieveRequests = function(req, res){
-
+	console.log(req.body);
 }
 
 exports.simpleGetRequests = function(req, res){
