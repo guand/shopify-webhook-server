@@ -24,7 +24,7 @@ exports.retrieveRequests = function(req, res){
 	// 	}
 	// 	items.push(item_object);
 	// }
-	console.log(res.headers["x-shopify-shop-domain"]);
+	console.log(res.headers);
 	res.end("OK");
 }
 
