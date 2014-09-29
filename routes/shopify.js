@@ -1,6 +1,6 @@
 exports.retrieveRequests = function(req, res){
-	console.log(req);
-	// console.log(req.body);
+	// console.log(req);
+	console.log(req.body);
 	res.end("OK");
 }
 
