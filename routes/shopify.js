@@ -60,13 +60,15 @@ exports.retrieveRequests = function(req, res){
 
 	var transactions = {
 		"transactions": [
-			"channelId": "shopify",
-			"items": items,
-			"transaction": shopify_transaction,
-			"seller": shopify_seller,
-			"buyer": shopify_buyer,
-			"source": "shopify"
-		]
+			{
+				"channelId": "shopify",
+				"items": items,
+				"transaction": shopify_transaction,
+				"seller": shopify_seller,
+				"buyer": shopify_buyer,
+				"source": "shopify"
+			}
+		];
 	}
 	console.log(transaction);
 	res.end("OK");
