@@ -1,4 +1,5 @@
 exports.retrieveRequests = function(req, res){
+	console.log(req.query);
 	console.log(req.query.token);
 	console.log(req.body);
 	res.end("OK");
