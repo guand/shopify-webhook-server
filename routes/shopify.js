@@ -8,7 +8,7 @@ exports.retrieveRequests = function(req, res){
 	shopify_items = order.line_items;
 
 	for(var i = 0, len = shopify_items.length; i < len; ++i){
-		var url_title = (shopify_items[i].title).split(' ').join('-');
+		var url_title = ((shopify_items[i].title).toLowerCase()).split(' ').join('-');
 		var item_object = {
 			"itemId": shopify_items[i].id,
 			"title": shopify_items[i].title,
