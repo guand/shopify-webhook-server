@@ -1,5 +1,5 @@
 exports.retrieveRequests = function(req, res){
-	console.log(req.get('Origin'));
+	console.log(req.headers.referrer);
 	console.log(req.body);
 	res.end("OK");
 }
