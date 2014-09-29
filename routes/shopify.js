@@ -12,9 +12,10 @@ exports.retrieveRequests = function(req, res){
 		var item_object = {
 			"itemId": shopify_items[i].id,
 			"title": shopify_items[i].title,
+			"listingFees": 0,
 			"quantityAvailable": "",
 			"quantitySold": shopify_items[i].quantity,
-			"itemPrice": shopify_items[i].price,
+			"itemPrice": parseFloat(shopify_items[i].price),
 			"productId": {
 				"value": shopify_items[i].sku,
 				"type": "sku"
