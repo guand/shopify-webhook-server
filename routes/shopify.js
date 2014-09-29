@@ -71,7 +71,7 @@ exports.retrieveRequests = function(req, res){
 		]
 	};
 
-	console.log(transactions);
+	console.log(JSON.stringify(transactions));
 	res.end("OK");
 }
 
