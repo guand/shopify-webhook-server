@@ -18,7 +18,7 @@ exports.retrieveRequests = function(req, res){
 			"productId": {
 				"value": shopify_items[i].sku,
 				"type": "sku"
-			}
+			},
 			"viewURL": "https://" + res.headers['x-shopify-shop-domain'] + "/products/" + url_title,
 			"categories": [];
 		}
