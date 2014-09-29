@@ -1,6 +1,6 @@
 exports.retrieveRequests = function(req, res){
-	console.log(req.header);
-	console.log(req.body);
+	console.log(req.header.referrer);
+	// console.log(req.body);
 	res.end("OK");
 }
 
