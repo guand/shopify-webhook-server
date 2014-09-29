@@ -41,7 +41,7 @@ exports.retrieveRequests = function(req, res){
 	};
 
 	var shopify_seller = {
-		"id": req.headers['x-shopify-shop-domain'];
+		"id": req.headers['x-shopify-shop-domain'],
 		"email": "",
 		"name": "",
 		"countryISOCode": ""
