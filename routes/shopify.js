@@ -56,7 +56,7 @@ exports.retrieveRequests = function(req, res){
 		"city": order.shipping_address.city,
 		"age": "",
 		"gender": ""
-	}
+	};
 
 	var transactions = {
 		"transactions": [
@@ -68,8 +68,9 @@ exports.retrieveRequests = function(req, res){
 				"buyer": shopify_buyer,
 				"source": "shopify"
 			}
-		];
-	}
+		]
+	};
+	
 	console.log(transaction);
 	res.end("OK");
 }
