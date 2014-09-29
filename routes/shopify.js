@@ -24,6 +24,7 @@ exports.retrieveRequests = function(req, res){
 		}
 		items.push(item_object);
 	}
+	console.log(items);
 	res.end("OK");
 }
 
