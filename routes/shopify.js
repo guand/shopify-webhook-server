@@ -71,6 +71,14 @@ exports.retrieveRequests = function(req, res){
 		]
 	};
 
+	var token = req.query.token;
+
+	request.("https://mmi.terapeak.com/services/users/channels/status?token=" + token, function(error, responese, body){
+		if (!error && response.statusCode == 200) {
+			console.log(body);
+		}
+	});
+
 	console.log(JSON.stringify(transactions));
 	res.end("OK");
 }
