@@ -20,7 +20,7 @@ exports.retrieveRequests = function(req, res){
 				"type": "sku"
 			},
 			"viewURL": "https://" + res.headers['x-shopify-shop-domain'] + "/products/" + url_title,
-			"categories": [];
+			"categories": []
 		}
 		items.push(item_object);
 	}
