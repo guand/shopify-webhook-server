@@ -70,8 +70,8 @@ exports.retrieveRequests = function(req, res){
 			}
 		]
 	};
-	
-	console.log(transaction);
+
+	console.log(transactions);
 	res.end("OK");
 }
 
