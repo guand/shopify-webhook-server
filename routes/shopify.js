@@ -1,5 +1,5 @@
 exports.retrieveRequests = function(req, res){
-	console.log(req.protocol);
+	console.log(req.protocol + '://' + req.get('host') + req.originalUrl);
 	console.log(req.body);
 	res.end("OK");
 }
