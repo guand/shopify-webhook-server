@@ -25,7 +25,11 @@ exports.retrieveRequests = function(req, res){
 		}
 		items.push(item_object);
 	}
-	console.log(items);
+
+	var shopify_transaction = {
+		
+	};
+	console.log(order);
 	res.end("OK");
 }
 
